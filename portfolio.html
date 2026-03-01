@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Cycle Demo</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<svg class="bg-dots" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <g transform="rotate(-10 400 300)" stroke="currentColor" stroke-width="1" stroke-dasharray="30 10" stroke-linecap="butt" fill="none">
+        <line x1="-200" y1="-40" x2="1000" y2="-40" />
+        <line x1="-200" y1="20"  x2="1000" y2="20" />
+        <line x1="-200" y1="80"  x2="1000" y2="80" />
+        <line x1="-200" y1="140" x2="1000" y2="140" />
+        <line x1="-200" y1="200" x2="1000" y2="200" />
+        <line x1="-200" y1="260" x2="1000" y2="260" />
+        <line x1="-200" y1="320" x2="1000" y2="320" />
+        <line x1="-200" y1="380" x2="1000" y2="380" />
+        <line x1="-200" y1="440" x2="1000" y2="440" />
+        <line x1="-200" y1="500" x2="1000" y2="500" />
+    </g>
+</svg>
+<nav class="navbar">
+    <div class="nav-left">
+        <div class="nav-logo">
+            <div class="cube">
+                <div class="face front">N</div>
+                <div class="face right">A</div>
+                <div class="face top">V</div>
+            </div>
+        </div>
+    </div>
+    <div class="hamburger" aria-label="Open Menu">
+        <span class="line top"></span>
+        <span class="line middle"></span>
+        <span class="line bottom"></span>
+    </div>
+    <div class="nav-links">
+        <a href="#hello">Hello<span class="underline"></span></a>
+        <a href="#about">About<span class="underline"></span></a>
+        <a href="#highlights">Highlights<span class="underline"></span></a>
+        <a href="#projects">Projects<span class="underline"></span></a>
+        <a href="#skills">Skills<span class="underline"></span></a>
+        <a href="#connect">Connect<span class="underline"></span></a>
+    </div>
+</nav>
+<div class="mobile-menu">
+    <a href="#hello">Hello</a>
+    <a href="#about">About</a>
+    <a href="#highlights">Highlights</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#connect">Connect</a>
+</div>
+
+<section class="hero" id="hello">
+    <div class="hero-inner">
+        <div class="hero-photo">
+            <img src="assets/formal-pic.jpg" alt="Naveed Arshad">
+        </div>
+        <div class="hero-text">
+            <p class="hi">Hi,</p>
+            <h1 class="name">I'm Naveed Arshad</h1>
+            <div class="cycle-wrapper">
+                <span class="cycle-text active">2nd Year EIE student @ MIT, Anna University</span>
+                <span class="cycle-text">Exploring complex and evolving behavior</span>
+                <span class="cycle-text">Simulating Digital systems & computing</span>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about" id="about">
+    <h1 class="section-header">About Me</h1>
+    <div class="about-track">
+        <div class="pane switch-container" id="about-switch-container">
+            <div class="switch active">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="9" cy="9" r="2" stroke-width="1.5"/>
+                    <path d="M13 15C13 16.1046 13 17 9 17C5 17 5 16.1046 5 15C5 13.8954 6.79086 13 9 13C11.2091 13 13 13.8954 13 15Z" stroke-width="1.5"/>
+                    <path d="M22 12C22 15.7712 22 17.6569 20.8284 18.8284C19.6569 20 17.7712 20 14 20H10C6.22876 20 4.34315 20 3.17157 18.8284C2 17.6569 2 15.7712 2 12C2 8.22876 2 6.34315 3.17157 5.17157C4.34315 4 6.22876 4 10 4H14C17.7712 4 19.6569 4 20.8284 5.17157C21.298 5.64118 21.5794 6.2255 21.748 7" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M19 12H15" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M19 9H14" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M19 15H16" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="switch">
+                <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"  xml:space="preserve" stroke="currentColor" fill="currentColor">
+                    <g>
+	                    <path d="M360.102,240.012l10.156-10.266c0,0,15.609-13.406,33.406-7.328c30.984,10.578,66.781-0.875,91.609-25.734c7.063-7.063,15.641-21.234,15.641-21.234c0.984-1.344,1.328-3.047,0.922-4.672l-1.922-7.906c-0.359-1.484-1.313-2.75-2.625-3.531c-1.313-0.766-2.891-0.969-4.344-0.547l-60.984,16.969c-2.266,0.625-4.688-0.219-6.063-2.109l-28.015-38.594c-0.859-1.172-1.219-2.641-1.016-4.063l5.641-41c0.297-2.234,1.891-4.047,4.063-4.656l64.406-17.922c2.906-0.813,4.672-3.813,3.953-6.766l-2.547-10.359c-0.344-1.469-1.281-2.719-2.563-3.5c0,0-5.047-3.344-8.719-5.234c-36.578-18.891-82.64-13.031-113.312,17.656c-22.656,22.656-31.531,53.688-27.375,83.156c3.203,22.656,1.703,34.703-8.078,45.047c-0.891,0.922-3.703,3.734-8.047,8L360.102,240.012z"/>
+	                    <path d="M211.383,295.418C143.024,361.652,68.461,433.715,68.461,433.715c-2.547,2.438-4,5.797-4.047,9.313c-0.047,3.5,1.344,6.891,3.813,9.375l31.938,31.938c2.5,2.484,5.875,3.859,9.391,3.813c3.516-0.031,6.859-1.5,9.281-4.031l139.328-140.953L211.383,295.418z"/>
+	                    <path d="M501.43,451.371c2.484-2.484,3.859-5.859,3.813-9.375c-0.031-3.516-1.5-6.859-4.031-9.297L227.415,166.246l-43.953,43.969L450.805,483.09c2.438,2.547,5.781,4,9.297,4.047s6.891-1.344,9.391-3.828L501.43,451.371z"/>
+	                    <path d="M254.196,32.621c-32.969-12.859-86.281-14.719-117.156,16.141c-24.313,24.313-59.875,59.891-59.875,59.891c-12.672,12.656-0.906,25.219-10.266,34.563c-9.359,9.359-24.313,0-32.734,8.422L3.29,182.527c-4.391,4.375-4.391,11.5,0,15.891l43.016,43.016c4.391,4.391,11.516,4.391,15.906,0l30.875-30.875c8.438-8.422-0.938-23.375,8.438-32.719c12.609-12.625,26.375-10.484,34.328-2.547l15.891,15.891l17.219,4.531l43.953-43.953l-5.063-16.688c-14.016-14.031-16.016-30.266-7.234-39.047c13.594-13.594,36.047-33.234,57.078-41.656C271.102,49.012,267.055,35.668,254.196,32.621z M194.571,103.48c-0.063,0.047,5.859-7.281,5.969-7.375L194.571,103.48z"/>
+                    </g>
+                </svg>
+            </div>
+            <div class="switch">
+                <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.7281 3.88396C17.1624 2.44407 19.2604 2.41383 20.4219 3.57981C21.5856 4.74798 21.5542 6.85922 20.1189 8.30009L17.6951 10.7333C17.4028 11.0268 17.4037 11.5017 17.6971 11.794C17.9906 12.0863 18.4655 12.0854 18.7578 11.7919L21.1816 9.35869C23.0929 7.43998 23.3329 4.37665 21.4846 2.5212C19.6342 0.663551 16.5776 0.905664 14.6653 2.82536L9.81768 7.69182C7.90639 9.61053 7.66643 12.6739 9.5147 14.5293C9.80702 14.8228 10.2819 14.8237 10.5754 14.5314C10.8688 14.2391 10.8697 13.7642 10.5774 13.4707C9.41376 12.3026 9.4451 10.1913 10.8804 8.75042L15.7281 3.88396Z"/>
+                    <path opacity="0.5" d="M14.4846 9.4707C14.1923 9.17724 13.7174 9.17632 13.4239 9.46864C13.1305 9.76097 13.1296 10.2358 13.4219 10.5293C14.5856 11.6975 14.5542 13.8087 13.1189 15.2496L8.27129 20.1161C6.83696 21.556 4.73889 21.5862 3.57742 20.4202C2.41376 19.2521 2.4451 17.1408 3.8804 15.6999L6.30424 13.2666C6.59657 12.9732 6.59565 12.4983 6.30219 12.206C6.00873 11.9137 5.53386 11.9146 5.24153 12.208L2.81769 14.6413C0.906387 16.56 0.666428 19.6234 2.5147 21.4788C4.36518 23.3365 7.42173 23.0944 9.334 21.1747L14.1816 16.3082C16.0929 14.3895 16.3329 11.3262 14.4846 9.4707Z"/>
+                </svg>
+            </div>
+        </div>
+        <div class="pane content">
+            <div class="content-para active" id="snapshot">
+                Hi, I'm Naveed Arshad, a second year Electronics & Instrumentation Engineering student with a strong interest in understanding systems from first principles. I'm deeply curious about how things work at a fundamental level, and I prefer breaking concepts down to their core mechanics before building them back up into complete systems.
+                <br>
+                I work on building and simulating systems that range from digital hardware concepts to computational models that demonstrate how complex behavior can emerge from simple underlying rules. Whether it's exploring logic at the hardware level or modeling interactions in a simulated environment, I focus on understanding the structure, constraints, and dynamics that drive system behavior.
+                <br>
+                Most of my learning happens through hands-on experimentation. I write simulations, construct models, and test ideas practically rather than relying only on theory. For me, building is a way of thinking, it helps me uncover how systems function beneath the surface and how small rule sets can scale into intricate, large-scale behavior.</div>
+            <div class="content-para" id="direction">
+                At present, I'm focused on strengthening my understanding of integrated circuit design across both analog and digital domains, with an emphasis on core principles and underlying design concepts. I try to understand the reasoning behind design decisions, the trade-offs involved, and the constraints that shape circuit behavior, rather than approaching it only from a tools or application perspective.
+                <br>
+                Alongside this, I'm actively learning and implementing machine learning techniques through personal, experiment-driven projects. My aim is to understand how learning algorithms actually work , how models update, how optimization functions, and how patterns are formed, instead of just using existing frameworks. I prefer building small implementations to observe how changes in structure or parameters affect results.
+                <br>
+                At the same time, I'm developing my front-end web development skills as a separate domain, focusing on clean, responsive, and well-structured interfaces that clearly present systems and simulations.
+            </div>
+            <div class="content-para" id="presence">
+                <p>Beyond academics, I actively document my learning journey and share insights online. I regularly post on LinkedIn about my projects, experiences, and the lessons I learn along the way. In parallel, I work on a variety of projects, which are available on my GitHub. This practice helps me deepen my understanding while also connecting with a wider community of learners and professionals.</p>
+                <div class="connect-links-container" id="pr-link-container">
+                    <a class="connect-link" id="pr-linkedIn" href="https://www.linkedin.com/in/naveed-arshad-15bb16322/" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.72 3.99997H5.37C5.19793 3.99191 5.02595 4.01786 4.86392 4.07635C4.70189 4.13484 4.55299 4.22471 4.42573 4.34081C4.29848 4.45692 4.19537 4.59699 4.12232 4.75299C4.04927 4.909 4.0077 5.07788 4 5.24997V18.63C4.01008 18.9901 4.15766 19.3328 4.41243 19.5875C4.6672 19.8423 5.00984 19.9899 5.37 20H18.72C19.0701 19.9844 19.4002 19.8322 19.6395 19.5761C19.8788 19.32 20.0082 18.9804 20 18.63V5.24997C20.0029 5.08247 19.9715 4.91616 19.9078 4.76122C19.8441 4.60629 19.7494 4.466 19.6295 4.34895C19.5097 4.23191 19.3672 4.14059 19.2108 4.08058C19.0544 4.02057 18.8874 3.99314 18.72 3.99997ZM9 17.34H6.67V10.21H9V17.34ZM7.89 9.12997C7.72741 9.13564 7.5654 9.10762 7.41416 9.04768C7.26291 8.98774 7.12569 8.89717 7.01113 8.78166C6.89656 8.66615 6.80711 8.5282 6.74841 8.37647C6.6897 8.22474 6.66301 8.06251 6.67 7.89997C6.66281 7.73567 6.69004 7.57169 6.74995 7.41854C6.80986 7.26538 6.90112 7.12644 7.01787 7.01063C7.13463 6.89481 7.2743 6.80468 7.42793 6.74602C7.58157 6.68735 7.74577 6.66145 7.91 6.66997C8.07259 6.66431 8.2346 6.69232 8.38584 6.75226C8.53709 6.8122 8.67431 6.90277 8.78887 7.01828C8.90344 7.13379 8.99289 7.27174 9.05159 7.42347C9.1103 7.5752 9.13699 7.73743 9.13 7.89997C9.13719 8.06427 9.10996 8.22825 9.05005 8.3814C8.99014 8.53456 8.89888 8.6735 8.78213 8.78931C8.66537 8.90513 8.5257 8.99526 8.37207 9.05392C8.21843 9.11259 8.05423 9.13849 7.89 9.12997ZM17.34 17.34H15V13.44C15 12.51 14.67 11.87 13.84 11.87C13.5822 11.8722 13.3313 11.9541 13.1219 12.1045C12.9124 12.2549 12.7546 12.4664 12.67 12.71C12.605 12.8926 12.5778 13.0865 12.59 13.28V17.34H10.29V10.21H12.59V11.21C12.7945 10.8343 13.0988 10.5225 13.4694 10.3089C13.84 10.0954 14.2624 9.98848 14.69 9.99997C16.2 9.99997 17.34 11 17.34 13.13V17.34Z"/>
+                        </svg>
+                    </a>
+                    <a class="connect-link" id="pr-github" href="https://github.com/naveed1756" target="_blank">
+                        <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" stroke="currentColor">
+                            <g id="Page-1" stroke="none" stroke-width="1">
+                            <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)">
+                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]" />
+                            </g>
+                            </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <a class="connect-link" id="pr-resume" href="./assets/resume.pdf" target="_blank" rel="noopener">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm0 4c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm6 12H6v-1.4c0-2 4-3.1 6-3.1s6 1.1 6 3.1V19z"/>
+                        </svg>
+                    </a>
+                </div>
+                <p>Feel free to explore my work and connect with me on LinkedIn and GitHub to follow my journey and exchange ideas.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="highlights" id="highlights">
+    <h1 class="section-header">Highlights</h1>
+    <div class="highlights-track">
+    <div class="construction-container">
+        <div class="construction-icon">
+            <i data-lucide="wrench"></i>
+        </div>
+        <p class="construction-text">
+            This section is under construction
+        </p>
+    </div>
+    </div>
+</section>
+<section class="projects" id="projects">
+    <h1 class="section-header">Projects</h1>
+    <div class="projects-grid">
+        <div class="project-card" id="evolsim">
+            <div class="card-front">
+                <div class="card-overlay"></div>
+                <h3 class="project-title">EvolSim</h3>
+                <div class="badge-container">
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">Simulation</span>
+                    <span class="badge">Web</span>
+                </div>
+            </div>
+            <div class="card-back">
+                <p class="project-desc">
+                    A browser-based simulation of organisms evolving in a 2D world through simple movement, survival, and reproduction rules.
+                </p>
+                <div class="link-container">
+                    <a href="https://github.com/naveed1756/evolsim" class="project-btn" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="project-card" id="img-blur">
+            <div class="card-front">
+                <div class="card-overlay"></div>
+                <h3 class="project-title">Image Blur Tool</h3>
+                <div class="badge-container">
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">Web</span>
+                    <span class="badge">Image Processing</span>
+                </div>
+            </div>
+            <div class="card-back">
+                <p class="project-desc">
+                    An Image Blurring Tool built as a small project to explore convolutions, image processing techniques.
+                </p>
+                <div class="link-container">
+                    <a href="https://github.com/naveed1756/image-blur" class="project-btn" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="project-card" id="the-snake">
+            <div class="card-front">
+                <div class="card-overlay"></div>
+                <h3 class="project-title">The Snake</h3>
+                <div class="badge-container">
+                    <span class="badge">Python</span>
+                    <span class="badge">Game</span>
+                    <span class="badge">Pygame</span>
+                </div>
+            </div>
+            <div class="card-back">
+                <p class="project-desc">
+                    A classic Snake multiplayer-in-single-device game implemented in Python using Pygame.
+                </p>
+                <div class="link-container">
+                    <a href="https://github.com/naveed1756/the-snake" class="project-btn" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="project-card" id="depthra">
+            <div class="card-front">
+                <div class="card-overlay"></div>
+                <h3 class="project-title">Depthra</h3>
+                <div class="badge-container">
+                    <span class="badge">Javascript</span>
+                    <span class="badge">NodeJS</span>
+                    <span class="badge">Web</span>
+                    <span class="badge">ML</span>
+                </div>
+            </div>
+            <div class="card-back">
+                <p class="project-desc">A groundwater monitoring and analysing application that uses AI and data processing models to analyse ground water data from DWLR stations from all over India</p>
+                <div class="link-container">
+                    <a href="https://github.com/depthra-devs/depthra" class="project-btn" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="project-card" id="portfolio">
+            <div class="card-front">
+                <div class="card-overlay"></div>
+                <h3 class="project-title">Personal Website</h3>
+                <div class="badge-container">
+                    <span class="badge">HTML</span>
+                    <span class="badge">CSS</span>
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">Web</span>
+                </div>
+            </div>
+            <div class="card-back">
+                <p class="project-desc">This personal portfolio website built with a focus on clean design, responsiveness, and smooth animations to showcase my projects and skills.</p>
+                <div class="link-container">
+                    <a href="https://github.com/depthra-devs/depthra-portfolio" class="project-btn" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="skills" id="skills"> 
+    <h1 class="section-header">Skills</h1>
+    <div class="skills-grid">
+        <div class="skill-card">
+            <h3 class="skill-title">Languages</h3>
+            <div class="skill-badges">
+                <span class="skill-item">
+                    <i class="devicon-python-plain"></i>
+                    Python
+                </span>
+                <span class="skill-item">
+                    <i class="devicon-c-plain"></i>
+                    C / C++
+                </span>
+                <span class="skill-item">
+                    <i class="devicon-javascript-plain"></i>
+                    JavaScript
+                </span>
+                <span class="skill-item">
+                    <i class="devicon-java-plain"></i>
+                    Java
+                </span>
+            </div>
+        </div>
+        <div class="skill-card">
+            <h3 class="skill-title">Core Concepts</h3>
+            <div class="skill-badges">
+                <span class="skill-item">
+                    <i data-lucide="binary"></i>
+                    Digital Logic Design
+                </span>
+                <span class="skill-item">
+                    <i data-lucide="cpu"></i>
+                    Analog IC
+                </span>
+                <span class="skill-item">
+                    <i class="devicon-tensorflow-original"></i>
+                    Machine Learning / AI
+                </span>
+            </div>
+        </div>
+        <div class="skill-card">
+            <h3 class="skill-title">Tools</h3>
+            <div class="skill-badges">
+                <span class="skill-item">
+                    <i class="devicon-git-plain"></i>
+                    Git
+                </span>
+                <span class="skill-item">
+                    <i class="devicon-matlab-plain"></i>
+                    MATLAB
+                </span>
+                <span class="skill-item">
+                    <i class="devicon-docker-plain"></i>
+                    Docker
+                </span>
+                <span class="skill-item">
+                    <i class="devicon-vscode-plain"></i>
+                    Visual Studio Code
+                </span>
+                <span class="skill-item">
+                    <i data-lucide="microchip"></i>
+                    Proteus
+                </span>
+            </div>
+        </div>
+        <div class="skill-card">
+            <h1 class="skill-title">Web</h1>
+            <div class="skill-badges">
+                <span class="skill-item">
+                    <i class="devicon-html5-plain"></i>
+                    HTML
+                </span>
+                <span class="skill-item">
+                    <i class="devicon-css3-plain"></i>
+                    CSS
+                </span>
+                <span class="skill-item">
+                    <i class="devicon-bootstrap-plain"></i>
+                    Bootstrap
+                </span>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="connect" id="connect">
+
+  <h1 class="section-header">Connect</h1>
+
+  <div class="connect-row">
+
+    <a href="mailto:yourmail@example.com" class="connect-item" id="connect-mail">
+        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M20 4C21.6569 4 23 5.34315 23 7V17C23 18.6569 21.6569 20 20 20H4C2.34315 20 1 18.6569 1 17V7C1 5.34315 2.34315 4 4 4H20ZM19.2529 6H4.74718L11.3804 11.2367C11.7437 11.5236 12.2563 11.5236 12.6197 11.2367L19.2529 6ZM3 7.1688V17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17V7.16882L13.8589 12.8065C12.769 13.667 11.231 13.667 10.1411 12.8065L3 7.1688Z" fill="#0F0F0F"/>
+        </svg>
+    </a>
+
+    <a href="https://github.com/naveed1756" target="_blank" class="connect-item" id="connect-gh">
+        <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" stroke="currentColor">
+            <g id="Page-1" stroke="none" stroke-width="1">
+            <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)">
+            <g id="icons" transform="translate(56.000000, 160.000000)">
+                <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]" />
+            </g>
+            </g>
+            </g>
+        </svg>
+    </a>
+
+    <a href="https://www.linkedin.com/in/naveed-arshad-15bb16322/" target="_blank" class="connect-item" id="connect-li">
+        <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.72 3.99997H5.37C5.19793 3.99191 5.02595 4.01786 4.86392 4.07635C4.70189 4.13484 4.55299 4.22471 4.42573 4.34081C4.29848 4.45692 4.19537 4.59699 4.12232 4.75299C4.04927 4.909 4.0077 5.07788 4 5.24997V18.63C4.01008 18.9901 4.15766 19.3328 4.41243 19.5875C4.6672 19.8423 5.00984 19.9899 5.37 20H18.72C19.0701 19.9844 19.4002 19.8322 19.6395 19.5761C19.8788 19.32 20.0082 18.9804 20 18.63V5.24997C20.0029 5.08247 19.9715 4.91616 19.9078 4.76122C19.8441 4.60629 19.7494 4.466 19.6295 4.34895C19.5097 4.23191 19.3672 4.14059 19.2108 4.08058C19.0544 4.02057 18.8874 3.99314 18.72 3.99997ZM9 17.34H6.67V10.21H9V17.34ZM7.89 9.12997C7.72741 9.13564 7.5654 9.10762 7.41416 9.04768C7.26291 8.98774 7.12569 8.89717 7.01113 8.78166C6.89656 8.66615 6.80711 8.5282 6.74841 8.37647C6.6897 8.22474 6.66301 8.06251 6.67 7.89997C6.66281 7.73567 6.69004 7.57169 6.74995 7.41854C6.80986 7.26538 6.90112 7.12644 7.01787 7.01063C7.13463 6.89481 7.2743 6.80468 7.42793 6.74602C7.58157 6.68735 7.74577 6.66145 7.91 6.66997C8.07259 6.66431 8.2346 6.69232 8.38584 6.75226C8.53709 6.8122 8.67431 6.90277 8.78887 7.01828C8.90344 7.13379 8.99289 7.27174 9.05159 7.42347C9.1103 7.5752 9.13699 7.73743 9.13 7.89997C9.13719 8.06427 9.10996 8.22825 9.05005 8.3814C8.99014 8.53456 8.89888 8.6735 8.78213 8.78931C8.66537 8.90513 8.5257 8.99526 8.37207 9.05392C8.21843 9.11259 8.05423 9.13849 7.89 9.12997ZM17.34 17.34H15V13.44C15 12.51 14.67 11.87 13.84 11.87C13.5822 11.8722 13.3313 11.9541 13.1219 12.1045C12.9124 12.2549 12.7546 12.4664 12.67 12.71C12.605 12.8926 12.5778 13.0865 12.59 13.28V17.34H10.29V10.21H12.59V11.21C12.7945 10.8343 13.0988 10.5225 13.4694 10.3089C13.84 10.0954 14.2624 9.98848 14.69 9.99997C16.2 9.99997 17.34 11 17.34 13.13V17.34Z"/>
+        </svg>
+    </a>
+
+  </div>
+    <p class="connect-footer">
+        Hand-crafted with vanilla HTML, CSS & JavaScript · GSAP for motion<br>© 2026 Naveed
+    </p>
+</section>
+
+    <div id="page-end"></div>
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
