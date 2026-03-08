@@ -41,6 +41,60 @@ body {
     z-index: -1;
 }
 
+.aurora-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 55vh;     /* only top half */
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,1) 55%,
+    rgba(0,0,0,0) 100%
+  );
+
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,1) 55%,
+    rgba(0,0,0,0) 100%
+  );
+}
+
+.aurora-bg::before,
+.aurora-bg::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  filter: blur(130px);
+  opacity: 0.65;
+}
+
+.aurora-bg::before {
+  background: radial-gradient(circle at 30% 40%, #6b0ca2, transparent 60%);
+  animation: auroraMove1 5s ease-in-out infinite alternate;
+}
+
+.aurora-bg::after {
+  background: radial-gradient(circle at 75% 30%, #ff4c4c, transparent 60%);
+  animation: auroraMove2 5s ease-in-out infinite alternate;
+}
+
+@keyframes auroraMove1 {
+  from { transform: translate(-10%, -5%) scale(1); }
+  to   { transform: translate(10%, 10%) scale(1.15); }
+}
+
+@keyframes auroraMove2 {
+  from { transform: translate(10%, -10%) scale(1); }
+  to   { transform: translate(-15%, 8%) scale(1.2); }
+}
+
 .navbar {
     padding: 1.25rem 1.2rem;
     display: flex;
