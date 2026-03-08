@@ -20,6 +20,16 @@
     font-weight: 500;
 }
 
+@font-face {
+    font-family: 'equinox';
+    src: url('./assets/equinox/Equinox\ Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'parisian';
+    src: url('./assets/parisian/PARISIAN.ttf');
+}
+
 * {
   box-sizing: border-box;
 }
@@ -30,6 +40,11 @@ body {
   font-family: 'poppins', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   background: #0e0e0e;
   color: #ffffff;
+}
+
+body::selection {
+  background: rgba(255, 255, 255, 0.5);
+  color: rgb(0, 0, 0);
 }
 
 .bg-dots {
@@ -86,13 +101,22 @@ body {
 }
 
 @keyframes auroraMove1 {
-  from { transform: translate(-10%, -5%) scale(1); }
-  to   { transform: translate(10%, 10%) scale(1.15); }
+    from {
+        transform: translate(-10%, -5%) scale(1);
+        
+    }
+    to {
+        transform: translate(10%, 10%) scale(1.15);
+    }
 }
 
 @keyframes auroraMove2 {
-  from { transform: translate(10%, -10%) scale(1); }
-  to   { transform: translate(-15%, 8%) scale(1.2); }
+    from {
+        transform: translate(10%, -10%) scale(1);
+    }
+    to {
+        transform: translate(-15%, 8%) scale(1.2);
+    }
 }
 
 .navbar {
@@ -102,6 +126,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #11111187;
+    user-select: none;
 }
 
 .nav-left {
@@ -109,8 +134,6 @@ body {
     font-weight: 500;
     opacity: 0.9;
 }
-
-/* NAV LINKS */
 
 .nav-links {
     display: flex;
@@ -124,11 +147,12 @@ body {
 }
 
 .nav-links a {
+    font-family: 'parisian', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
     position: relative;
     text-decoration: none;
     color: #989898;
     font-size: clamp(0.85rem, 3.5vw, 1.25rem);
-    font-weight: 500;
     
 }
 
@@ -178,6 +202,7 @@ body {
 }
 
 .cube .face {
+    font-family: 'equinox', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     position: absolute;
     width: 32px;
     height: 32px;
@@ -222,6 +247,7 @@ body {
 }
 
 .mobile-menu {
+    user-select: none;
     position: fixed;
     top: 15vh;
     right: 0;
@@ -247,7 +273,6 @@ body {
     text-decoration: none;
     color: #989898;
     font-size: clamp(0.85rem, 3.5vw, 1.25rem);
-    font-family: 'poppins', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 400;
     text-align: center;
     background: none;
@@ -264,6 +289,8 @@ body {
 }
 
 .section-header {
+    user-select: none;
+    font-family: 'parisian', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: clamp(2rem, 6vw, 3rem);
     font-weight: 600;
     text-align: center;
@@ -278,6 +305,7 @@ body {
 }
 
 .hero {
+    user-select: none;
     min-height: calc(100vh - 4rem);
     display: flex;
     align-items: center;
@@ -311,7 +339,6 @@ body {
 }
 
 .hi {
-    font-family: 'poppins', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 500;
     font-size: clamp(1.5rem, 4vw, 2rem);
     margin-bottom: 0.5rem;
@@ -330,6 +357,7 @@ body {
 }
 
 .cycle-text {
+    font-family: 'parisian', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     font-style: normal;
     font-weight: 600;
     position: absolute;
@@ -394,6 +422,7 @@ body {
 }
 
 .pane.content .content-para {
+    font-family: "Quicksand", sans-serif;
     grid-area: 1/1;
     visibility: hidden;
     align-self: start;
@@ -600,12 +629,14 @@ body {
 }
 
 .project-title {
+    font-family: 'equinox', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     z-index: 1;
     font-size: 0.9rem;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .project-desc {
+    font-family: 'quicksand', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: clamp(0.85rem, 1.5vw, 1.25rem);
 }
 
@@ -676,6 +707,7 @@ body {
 }
 
 .skill-title {
+    user-select: none;
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -757,10 +789,11 @@ body {
 }
 
 .connect-footer {
-  margin-top: 4rem;
-  font-size: clamp(0.75rem, 1.5vw, 1rem);
-  color: #878787;
-  opacity: 0.8;
+    user-select: none;
+    margin-top: 4rem;
+    font-size: clamp(0.75rem, 1.5vw, 1rem);
+    color: #878787;
+    opacity: 0.8;
 }
 
 #page-end {
