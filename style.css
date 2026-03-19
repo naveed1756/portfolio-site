@@ -270,6 +270,7 @@ body::selection {
 }
 
 .mobile-menu a {
+    font-family: 'parisian', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     text-decoration: none;
     color: #989898;
     font-size: clamp(0.85rem, 3.5vw, 1.25rem);
@@ -737,7 +738,7 @@ body::selection {
 }
 
 .skill-item i {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 .connect {
